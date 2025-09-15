@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giving | Wonders Tabernacle Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white shadow-md w-full">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">Wonders Tabernacle</h1>
+      <nav class="space-x-6 font-medium">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="pastor.html" class="hover"text-blue-700 font-semibold">Pastor's Corner</a>
+        <a href="sanctuary.html" class="hover:text-blue-600">New Sanctuary</a>
+        <a href="sermons.html" class="hover:text-blue-600">Sermons</a>
+        <a href="events.html" class="hover:text-blue-600">Events</a>
+        <a href="giving.html" class="hover:text-blue-600">Giving</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
+    <div class="container mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Support the Work of Wonders Tabernacle</h2>
+      <p class="max-w-2xl mx-auto text-lg mb-6">Your generosity helps our ministries, community outreach, and the New Sanctuary project. Give with joy — any amount matters.</p>
+      <div class="flex items-center justify-center gap-3">
+        <a href="#donation-form" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">Give Now</a>
+        <a href="#why-give" class="border border-white px-6 py-3 rounded-lg hover:bg-white/10">Why Give</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIVING OPTIONS -->
+  <section id="ways-to-give" class="py-16 px-6 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
+    <h3 class="text-3xl font-bold text-blue-700 mb-10 text-center">Ways to Give</h3>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="give-card bg-blue-50 shadow-lg rounded-lg p-6 opacity-0 translate-y-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl" data-delay="0">
+        <h4 class="text-xl font-bold text-blue-700 mb-2">Tithes</h4>
+        <p class="text-gray-700">Honor God with your tenth as an act of faith and obedience.</p>
+      </div>
+      <div class="give-card bg-green-50 shadow-lg rounded-lg p-6 opacity-0 translate-y-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl" data-delay="150">
+        <h4 class="text-xl font-bold text-green-700 mb-2">Offerings</h4>
+        <p class="text-gray-700">Give freely from your heart to support the ministry’s growth.</p>
+      </div>
+      <div class="give-card bg-purple-50 shadow-lg rounded-lg p-6 opacity-0 translate-y-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl" data-delay="300">
+        <h4 class="text-xl font-bold text-purple-700 mb-2">Building Fund</h4>
+        <p class="text-gray-700">Partner with us as we build and expand God’s house.</p>
+      </div>
+      <div class="give-card bg-yellow-50 shadow-lg rounded-lg p-6 opacity-0 translate-y-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl" data-delay="450">
+        <h4 class="text-xl font-bold text-yellow-600 mb-2">Missions</h4>
+        <p class="text-gray-700">Support outreach programs and spreading the gospel worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- DONATION FORM -->
+<section id="donation-form" class="py-16 px-6 bg-gray-50">
+  <div class="container mx-auto max-w-lg bg-white shadow-lg rounded-lg p-8">
+    <h3 class="text-2xl font-bold text-blue-700 mb-6 text-center">Make a Donation</h3>
+
+    <!-- FORM START -->
+    <form class="space-y-4" method="POST" action="stkpush.php">
+      <div>
+        <label class="block mb-1 font-medium">Full Name</label>
+        <input type="text" name="fullname" class="w-full border rounded p-3" placeholder="Your Name" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Email Address</label>
+        <input type="email" name="email" class="w-full border rounded p-3" placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Phone Number (Safaricom)</label>
+        <input type="tel" name="phone" class="w-full border rounded p-3" placeholder="07XXXXXXXX" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Amount (KES)</label>
+        <input type="number" name="amount" class="w-full border rounded p-3" placeholder="Enter Amount" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Purpose</label>
+        <select name="purpose" class="w-full border rounded p-3">
+          <option>Tithes</option>
+          <option>Offerings</option>
+          <option>Building Fund</option>
+          <option>Missions</option>
+        </select>
+      </div>
+
+      <!-- PAYMENT METHOD OPTIONS -->
+      <div>
+        <label class="block mb-2 font-medium">Choose Payment Method</label>
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Mpesa will SUBMIT form -->
+          <button type="submit" name="pay_method" value="mpesa" class="bg-green-600 text-white py-3 rounded hover:bg-green-800 transition">
+            Mpesa
+          </button>
+          <!-- Other buttons can be linked later -->
+          <button type="button" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-800 transition">
+            PayPal
+          </button>
+          <button type="button" class="bg-purple-600 text-white py-3 rounded hover:bg-purple-800 transition">
+            Credit/Debit Card
+          </button>
+          <button type="button" class="bg-yellow-600 text-white py-3 rounded hover:bg-yellow-800 transition">
+            Bank Transfer
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- FORM END -->
+
+  </div>
+</section>
+
+  <!-- WHY GIVE SECTION -->
+  <section id="why-give" class="py-16 px-6 container mx-auto">
+    <h3 class="text-3xl font-bold text-blue-700 mb-6 text-center">Why We Give</h3>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 text-center">
+      Giving is an act of worship and trust. It empowers the church to continue serving the community, supporting missions, and sustaining God’s work. 
+      Your contribution makes an eternal difference.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white py-10 mt-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h4 class="font-bold mb-3">Contact Us</h4>
+        <p>Nairobi, Kenya</p>
+        <p>Email: info@wonderschurch.org</p>
+        <p>Phone: +254 700 123 456</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Quick Links</h4>
+        <p><a href="about.html">About</a> | <a href="sermons.html">Sermons</a> | <a href="events.html">Events</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Follow Us</h4>
+        <p>Facebook | YouTube | Instagram | WhatsApp</p>
+      </div>
+    </div>
+    <p class="text-center text-sm mt-6">&copy; 2025 Wonders Tabernacle Church. All rights reserved.</p>
+  </footer>
+
+  <!-- STYLE FOR ANIMATIONS -->
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 0.9s ease forwards;
+    }
+  </style>
+
+  <!-- SCRIPT: Animate on every scroll with staggered delay -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".give-card");
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.getAttribute("data-delay") || 0;
+            entry.target.style.animationDelay = `${delay}ms`;
+            entry.target.classList.add("fade-in");
+          } else {
+            entry.target.classList.remove("fade-in"); 
+            entry.target.style.animationDelay = "0ms";
+          }
+        });
+      }, { threshold: 0.2 });
+
+      cards.forEach(card => observer.observe(card));
+    });
+  </script>
+
+</body>
+</html>

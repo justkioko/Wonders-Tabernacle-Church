@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonders Tabernacle Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800 scroll-smooth">
+
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 transition bg-transparent" id="navbar">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-white">Wonders Tabernacle</h1>
+      <nav class="hidden md:flex space-x-6 text-white font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="pastor.html" class="hover:text-blue-600">Pastor's Corner</a>
+        <a href="sanctuary.html" class="hover:text-blue-600">New Sanctuary</a>
+        <a href="sermons.html" class="hover:text-blue-600">Sermons</a>
+        <a href="events.html" class="hover:text-blue-600">Events</a>
+        <a href="giving.html" class="hover:text-blue-600">Giving</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?church,worship');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center">
+      <div class="text-white max-w-3xl" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to Wonders Tabernacle Church</h1>
+        <p class="text-xl md:text-2xl mb-8">Transforming Lives, Empowering Faith</p>
+        <div class="space-x-4">
+          <a href="#services" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold transition">Join Us</a>
+          <a href="#live" class="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">Watch Live</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK INFO -->
+  <section id="services" class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold mb-2">🕘 Service Times</h3>
+        <p>Sundays 9AM & 11AM</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-2">📍 Location</h3>
+        <p>Nairobi, Kenya <a href="#" class="text-blue-500 underline">View Map</a></p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="400">
+        <h3 class="text-xl font-bold mb-2">📱 Contact</h3>
+        <p>Call/WhatsApp: +254 700 000 000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 text-center">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">About Wonders Tabernacle</h2>
+      <p class="text-lg mb-6">At Wonders Tabernacle Church, we are committed to spreading the Gospel, transforming lives, and creating a community rooted in love and service.</p>
+      <a href="#more" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold transition">Learn More</a>
+    </div>
+  </section>
+
+  <!-- MINISTRIES -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Our Ministries</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-right">
+          <h3 class="text-xl font-bold mb-2">✝️ Worship</h3>
+          <p>Spirit-filled worship experiences every Sunday.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-right" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-2">📖 Sermons</h3>
+          <p>Biblical teachings to grow your faith.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-left" data-aos-delay="400">
+          <h3 class="text-xl font-bold mb-2">🙌 Ministries</h3>
+          <p>Opportunities to serve and impact lives.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-left" data-aos-delay="600">
+          <h3 class="text-xl font-bold mb-2">🤝 Fellowship</h3>
+          <p>Building strong connections within the body of Christ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-16">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Upcoming Events</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="flip-left">
+          <img src="https://source.unsplash.com/400x250/?worship,church" alt="Event" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Youth Revival Night</h3>
+            <p class="text-sm text-gray-500">Sep 25, 2025</p>
+            <a href="#" class="text-blue-500 font-semibold">View Event</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="flip-left" data-aos-delay="200">
+          <img src="https://source.unsplash.com/400x250/?bible,faith" alt="Event" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Bible Study Week</h3>
+            <p class="text-sm text-gray-500">Oct 5, 2025</p>
+            <a href="#" class="text-blue-500 font-semibold">View Event</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="flip-left" data-aos-delay="400">
+          <img src="https://source.unsplash.com/400x250/?community,church" alt="Event" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Community Outreach</h3>
+            <p class="text-sm text-gray-500">Oct 15, 2025</p>
+            <a href="#" class="text-blue-500 font-semibold">View Event</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-6" data-aos="fade-up">
+        <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold transition">See All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERMON -->
+  <section id="live" class="py-16 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Latest Sermon</h2>
+    <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+      <iframe class="w-full h-64 md:h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Latest Sermon" frameborder="0" allowfullscreen></iframe>
+      <p class="mt-4 text-lg">“Walking in Faith” – Sep 10, 2025</p>
+      <a href="#" class="text-blue-500 font-semibold">More Sermons</a>
+    </div>
+  </section>
+
+  <!-- GIVING -->
+  <section id="giving" class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Giving & Donations</h2>
+    <p class="mb-6 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Support the mission of Wonders Tabernacle Church. Your generosity helps us reach more lives and build the new sanctuary.</p>
+    <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold transition" data-aos="zoom-in">Give Online</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 text-center md:text-left">
+      <div data-aos="fade-right">
+        <h3 class="text-lg font-bold mb-2">Wonders Tabernacle</h3>
+        <p>Nairobi, Kenya</p>
+        <p>+254 700 000 000</p>
+      </div>
+      <div data-aos="fade-up">
+        <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+        <ul>
+          <li><a href="#about" class="hover:underline">About Us</a></li>
+          <li><a href="#live" class="hover:underline">Sermons</a></li>
+          <li><a href="#events" class="hover:underline">Events</a></li>
+        </ul>
+      </div>
+      <div data-aos="fade-left">
+        <h3 class="text-lg font-bold mb-2">Connect</h3>
+        <div class="space-x-4">
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-sm mt-6">&copy; 2025 Wonders Tabernacle Church. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Navbar background change on scroll
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("bg-white", "shadow-md");
+        navbar.classList.remove("bg-transparent");
+        navbar.querySelector("h1").classList.replace("text-white", "text-blue-700");
+        navbar.querySelectorAll("nav a").forEach(a => a.classList.replace("text-white", "text-gray-800"));
+      } else {
+        navbar.classList.add("bg-transparent");
+        navbar.classList.remove("bg-white", "shadow-md");
+        navbar.querySelector("h1").classList.replace("text-blue-700", "text-white");
+        navbar.querySelectorAll("nav a").forEach(a => a.classList.replace("text-gray-800", "text-white"));
+      }
+    });
+  </script>
+
+</body>
+</html>
